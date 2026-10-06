@@ -1,6 +1,8 @@
 #!/bin/bash
-echo "=== MODO PRODUCCION ==="
-echo "Iniciando servicios en segundo plano..."
+echo "Comprobando estado de nginx:"
 systemctl status nginx
 echo "Listando directorios activos:"
-ls -la /var/www/html
+echo "Listando ficheros del proyecto:"
+ls -la
+echo "Comporbando procesos activos:"
+ps aux 
